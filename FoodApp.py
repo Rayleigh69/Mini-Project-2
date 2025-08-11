@@ -25,6 +25,7 @@ def get_customer_info():
     win.title("Customer Details")
     win.geometry("360x465")
     win.config(bg="white")
+    win.iconbitmap(r"C:\Users\vaibh\Desktop\Projects\Solo\c.ico")
     win.resizable(True, True)
     
     tk.Label(win, text="Customer Information", font=("Segoe UI", 16, "bold"), bg="white", fg="#2c3e50", pady=20).pack()
@@ -60,7 +61,7 @@ def show_bill():
     win = tk.Toplevel(root)
     win.title("Order Summary")
     win.geometry("450x500")
-    win.iconbitmap(r"s.ico")
+    win.iconbitmap(r"C:\Users\vaibh\Desktop\Projects\Solo\s.ico")
     win.config(bg="white")
     
     tk.Label(win, text="Order Summary", font=("Segoe UI", 18, "bold"), bg="white", fg="#2c3e50", pady=20).pack()
@@ -99,6 +100,7 @@ def open_menu(category):
     win = tk.Toplevel(root)
     win.title(f"{category} Menu")
     win.geometry("800x700")
+    win.iconbitmap(r"C:\Users\vaibh\Desktop\Projects\Solo\m.ico")
     win.config(bg="#f5f7fa")
     win.resizable(False, False)
     
@@ -144,6 +146,7 @@ root = tk.Tk()
 root.title("Spice Garden Restaurant")
 root.geometry("700x900")
 root.config(bg="#f5f7fa")
+root.iconbitmap(r"C:\Users\vaibh\Desktop\Projects\Solo\sg.ico")
 root.resizable(True, True)
 cart_total = tk.StringVar()
 
@@ -195,6 +198,4 @@ footer.pack_propagate(False)
 tk.Label(footer, text="✨ Thank you for choosing Spice Garden! ✨", font=("Segoe UI", 11), bg="#34495e", fg="#ecf0f1").pack(expand=True)
 
 cart_total.set("₹0")
-
 root.mainloop()
-
