@@ -25,7 +25,6 @@ def get_customer_info():
     win.title("Customer Details")
     win.geometry("360x465")
     win.config(bg="white")
-    win.iconbitmap(r"c.ico")
     win.resizable(True, True)
     
     tk.Label(win, text="Customer Information", font=("Segoe UI", 16, "bold"), bg="white", fg="#2c3e50", pady=20).pack()
@@ -100,7 +99,6 @@ def open_menu(category):
     win = tk.Toplevel(root)
     win.title(f"{category} Menu")
     win.geometry("800x700")
-    win.iconbitmap(r"m.ico")
     win.config(bg="#f5f7fa")
     win.resizable(False, False)
     
@@ -146,7 +144,6 @@ root = tk.Tk()
 root.title("Spice Garden Restaurant")
 root.geometry("700x900")
 root.config(bg="#f5f7fa")
-root.iconbitmap(r"sg.ico")
 root.resizable(True, True)
 cart_total = tk.StringVar()
 
@@ -200,3 +197,4 @@ tk.Label(footer, text="✨ Thank you for choosing Spice Garden! ✨", font=("Seg
 cart_total.set("₹0")
 
 root.mainloop()
+
